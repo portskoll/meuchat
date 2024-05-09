@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-868orwbh9trwiz^^lekjnl$)p-q(8!tbj6q=nv2p@hxc(l4qxz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*.herokuapp.com', '127.0.0.1','0.0.0.0', '179.108.177.47','192.168.0.104']
+ALLOWED_HOSTS = ['testkollchat-6b13eef17a5b.herokuapp.com', '127.0.0.1','0.0.0.0', '179.108.177.47','192.168.0.104']
 
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/rooms/'
