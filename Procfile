@@ -1,3 +1,4 @@
-web: gunicorn djangochat.wsgi
-worker: python manage.py runworker channel_layer
+web: gunicorn djangochat.asgi:application -k uvicorn.workers.UvicornWorker
+
+
 
