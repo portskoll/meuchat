@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-868orwbh9trwiz^^lekjnl$)p-q(8!tbj6q=nv2p@hxc(l4qxz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*.heroku.com', '127.0.0.1','0.0.0.0', '179.108.177.47','192.168.0.104']
+ALLOWED_HOSTS = ['*.herokuapp.com', '127.0.0.1','0.0.0.0', '179.108.177.47','192.168.0.104']
 
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/rooms/'
@@ -79,12 +79,9 @@ WSGI_APPLICATION = 'djangochat.wsgi.application'
 ASGI_APPLICATION = 'djangochat.asgi.application'
 
 CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [("localhost", 6379)],  # Configure com as informações do seu Heroku Data for Redis
-        },
-    },
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer'
+    }
 }
 
 
