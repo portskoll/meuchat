@@ -1,4 +1,4 @@
-web: gunicorn djangochat.asgi:application -k uvicorn.workers.UvicornWorker
+web: gunicorn djangochat.asgi:application
 
 
 
