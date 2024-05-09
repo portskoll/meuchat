@@ -31,7 +31,7 @@ LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/rooms/'
 LOGIN_URL = '/login/'
 
-CSRF_TRUSTED_ORIGINS = ['testkollchat-6b13eef17a5b.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://testkollchat-6b13eef17a5b.herokuapp.com']
 
 
 # Application definition
