@@ -1,6 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,6 +36,9 @@
     </div>
 </nav>
 {% block content%} {% endblock %}
-{% block scripts%} {% endblock %}
+{% block scripts%}
+<script src="{% static 'room.js' %}"></script>
+
+{% endblock %}
 </body>
 </html>
